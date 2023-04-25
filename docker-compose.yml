@@ -1,0 +1,20 @@
+version: '3.8'
+services:
+  bot:
+    build: .
+    command: python XXX.py
+    environment:
+      - PYTHONDONTWRITEBYTECODE=1
+      - PYTHONUNBUFFERED=True
+    volumes:
+      - ./:/root
+    restart: always
+  factory:
+    build: .
+    command: python YYY.py
+    environment:
+      - PYTHONDONTWRITEBYTECODE=1
+      - PYTHONUNBUFFERED=True
+    volumes:
+      - ./:/root
+    restart: always

@@ -1,0 +1,7 @@
+.venv/
+.env
+*.db
+*.ipynb
+*.pdf
+*.docx
+*.doc
